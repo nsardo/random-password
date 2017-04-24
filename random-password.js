@@ -1,11 +1,13 @@
 /**
  * @author Nicholas Sardo <nsardo@aol.com>
+ *
+ * (uses seedrandom.js code by David Bau to seed random numbers)
  */
 
 
 /*
-seedrandom.js
-=============
+seedrandom.min.js
+=================
 
 Seeded random number generator for Javascript.
 
