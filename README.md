@@ -3,8 +3,9 @@
 
 A Meteor Package to generate a random password of specified length containing a mixture of upper and lowercase alpha-numeric characters, and the characters: !  #  $  %  &amp;  *  +  ?  ~  @
 
-*DEFAULT*:  Return alpha-numeric characters, roughly 80% chance for each letter
-            Return special characters, roughly 20% chance for each letter
+*DEFAULT*:  
+Return alpha-numeric characters, roughly 80% chance for each letter
+Return special characters, roughly 20% chance for each letter
 
             generateRandomPassword( length [,special_chars_percent_chance] )
             
