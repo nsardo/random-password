@@ -1,7 +1,7 @@
 # random-password
 ## for [Meteor](http://meteor.com)
 
-A Meteor Package to generate a random password of specified length containing a mixture of alpha-numeric characters, and the characters: !  #  $  %  &amp;  *  +  ?  ~   @
+A Meteor Package to generate a random password of specified length containing a mixture of upper and lowercase alpha-numeric characters, and the characters: !  #  $  %  &amp;  *  +  ?  ~  @
 
 ## usage:
 
