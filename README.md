@@ -7,6 +7,7 @@ A Meteor Package to generate a random password of specified length containing a 
             Return special characters, roughly 20% chance for each letter
 
             generateRandomPassword( length [,special_chars_percent_chance] )
+            
             where LENGTH: is required, and the number of characters desired in the password
                   SPECIAL_CHARS_PERCENT_CHANCE: is optional, and if not included, defaults to 20 (for 20% chance)
             NOTE for special_chars_percent_chance, desired percentage chance should be a WHOLE NUMBER, i.e. 25 for 25%
