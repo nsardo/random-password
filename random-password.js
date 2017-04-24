@@ -34,7 +34,8 @@ export function generateRandomPassword( len, percent_punc_appears = 20 ) {
       //        !  #  $  %  &  *  +  ?  ~   @
     , punc  =  [33,35,36,37,38,42,43,63,64,126];
     
-    
+  Math.seedrandom();
+  
   do {   
     //RETURN PUNC CHARACTER ROUGHLY percent_punc_appears % CHANCE
     if (  Math.floor( ( Math.random() * 100 ) + 1 ) <= Number(percent_punc_appears)  ) {
