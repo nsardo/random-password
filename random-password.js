@@ -24,7 +24,11 @@ Author: David Bau
  * let password = generateRandomPassword( len );
  *
  **********************************************/
-export function generateRandomPassword( len ) {
+export function generateRandomPassword( len, percent_punc_appears = 20 ) {
+  if ( (String(percent_punc_appears)).indexOf('.') != -1 || Number(percent_punc_appears) > 100 ) { 
+    throw new Error('INVALID INPUT. Whole numbers only, less than or equal to 100'); 
+  }
+
   let pw    = ''
   
       //        !  #  $  %  &  *  +  ?  ~   @
@@ -32,12 +36,12 @@ export function generateRandomPassword( len ) {
     
     
   do {   
-    //RETURN PUNC CHARACTER 20% OF THE TIME
-    if (  Math.floor( ( Math.random() * 100 ) + 1 ) <= 20  ) {
+    //RETURN PUNC CHARACTER ROUGHLY percent_punc_appears % CHANCE
+    if (  Math.floor( ( Math.random() * 100 ) + 1 ) <= Number(percent_punc_appears)  ) {
       let pran = Math.floor( ( Math.random() * 9 ));    //0 - 9
       pw += String.fromCharCode( punc[ pran ] );
     } else {
-      //80% OF THE TIME RETURN EITHER UPPER OR LOWER CASE LETTER
+      //100 - percent_punc_appears % CHANCE TO RETURN EITHER UPPER OR LOWER CASE LETTER
       pw += returnRandomLetterAndCase(); 
     }
   } while ( pw.length != len ); //x CHARACTER PASSWORDS RETURNED
