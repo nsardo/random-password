@@ -1,6 +1,6 @@
 Package.describe({
   name: 'nsardo:random-password',
-  version: '1.0.0',
+  version: '1.2.0',
   summary: 'Creates a randomly generated password of selected length',
   git: 'https://github.com/nsardo/random-password.git',
   documentation: 'README.md'
