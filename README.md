@@ -3,6 +3,8 @@
 
 A Meteor Package to generate a random password of specified length containing a mixture of upper and lowercase alpha-numeric characters, and the special characters: !  #  $  %  &amp;  *  +  ?  ~  @
 
+Uses seedrandom.js by David Bau for random number generation
+
 *DEFAULT*:  
 - Return alpha-numeric characters, roughly 80% chance for each letter
 - Return special characters, roughly 20% chance for each letter
